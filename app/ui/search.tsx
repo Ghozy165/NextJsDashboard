@@ -14,7 +14,7 @@ export default function Search({ placeholder }: { placeholder: string }) {
 
   function handleSearch(term: string) {
     console.log(`Searching... ${term}`);
-
+    params.set('page', '1');
     if (term) {
       params.set('query', term);
     } else {
